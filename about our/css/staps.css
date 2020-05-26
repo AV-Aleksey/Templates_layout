@@ -1,0 +1,107 @@
+/* стили блока аккордеон */
+.title-section {
+	text-align: center;
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+}
+.wrap-staps__circle, .wrap-staps__line {
+	background: #ff822e;
+}
+.section-title {
+	text-align: center;
+}
+.staps {
+	padding: 40px;
+}
+
+.wrap-staps {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px;
+}
+.wrap-staps__item {
+	max-width: 250px;
+	margin: 0px 20px;
+}
+.wrap-staps__graphic {
+	position: relative;
+	
+}
+.circle-wrap {
+	width: 50px;
+	height: 50px;
+}
+.wrap-staps__circle {
+	padding: 12px 20px;
+	position: absolute;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	border: 2px solid #fff;
+	z-index: 1;
+}
+
+.wrap-staps__line {
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	top: 50%;	
+	right: -50px;
+	z-index: 0;
+}
+.wrap-staps__item:last-child .wrap-staps__graphic .wrap-staps__line {
+	visibility: hidden;
+}
+.wrap-staps__text {
+	margin-top: 20px;
+}
+.wrap-staps__title {
+	font-size: 18px;
+	font-weight: 700;
+}
+.wrap-staps__p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 16px;
+}
+
+@media screen and (max-width: 992px) {
+	.wrap-staps {
+		align-items: center;
+	}
+	.wrap-staps__item {
+		display: flex;
+	}
+	.wrap-staps__item {
+		max-width: 100%;
+		margin: 0px;
+	}  
+	.wrap-staps {
+		display: flex;
+		flex-direction: column;
+	}
+	.wrap-staps__graphic {
+		position: inherit;
+	}
+	.wrap-staps__item {
+		position: relative;
+	}
+	.wrap-staps__line {
+		height: 100%;
+		width: 2px;
+		left: 50%;
+		top: 0%;
+	}
+	.wrap-staps__text {
+		margin-top: 0px;
+		margin-left: 30px;
+	}
+	.wrap-staps__p {
+		margin-top: 8px;
+		padding-bottom: 40px;
+	}
+}

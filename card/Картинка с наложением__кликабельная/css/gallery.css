@@ -1,0 +1,160 @@
+/* стили блока аккордеон */
+.faq {
+	background: #eeeeee;
+	padding: 40px 0px;
+}
+.title-section {
+	text-align: center;
+}
+
+.wrap-gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container-card {
+	position: relative;
+	margin: 5px;
+}
+
+.image {
+	display: block;
+	max-width: 360px;
+	height: auto;
+	cursor: pointer;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.60);
+	overflow: hidden;
+	max-width: 360px;
+	height: 0;
+	transition: .5s ease;
+	cursor: pointer;
+}
+
+.container-card:hover .overlay {
+	height: 100%;
+}
+
+.overlay__wrap {
+	color: white;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	top: 60%;
+	left: 50%;
+	width: 300px;
+}
+.overlay__wrap * {
+	margin: 15px 0px;
+}
+.text {
+	font-size: 24px;
+	font-weight: normal;
+
+}
+.pre-text {
+	font-size: 12px;
+	font-weight: 300;
+}
+.post-text {
+	font-size: 20px;
+	font-weight: 300;
+	display: block; /* or inline-block */
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+	max-height: 3.6em;
+	line-height: 1.8em;
+}
+.post-text::after {
+	content: "...";
+	position: absolute;
+	right: 0px; 
+	bottom: 15px;
+  }
+  
+/* Форма */
+#form_content {
+	display: flex;
+	box-shadow: none;
+}
+.form_content__wrap-text {
+	max-width: 400px;
+	font-size: 14px;
+}
+.form_content__wrap-img {
+	width: 500px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+.form_content__wrap-img img {
+	cursor: zoom-in;
+	margin: 0 auto;
+}
+.form_content__wrap-text {
+	border-left: 1px solid #e0dede;
+}
+.form_content__title {
+	border-bottom: 1px solid #e0dede;
+}
+.form_content__p, .form_content__title {
+	padding: 15px;
+}
+.arcticmodal-close { 
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 32px;
+	height: 32px;
+	opacity: 0.3;
+	}
+.arcticmodal-close:hover {
+	opacity: 1;
+}
+.arcticmodal-close:before, .arcticmodal-close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 20px;
+	width: 2px;
+	background-color: #333;
+}
+.arcticmodal-close:before {
+	transform: rotate(45deg);
+}
+.arcticmodal-close:after {
+	transform: rotate(-45deg);
+}
+/* форма-адаптив */
+@media screen and (max-width: 992px) {
+	#form_content {
+		flex-direction: column;
+	}
+
+	.form_content__wrap-text {
+		border-left: none;
+	}
+	.form_content__title {
+		border-bottom: 1px solid #e0dede;
+		text-align: center;
+	}
+	.form_content__wrap-text {
+		width: 100%;
+		padding: 0px;
+		text-align: center;
+	}
+	.form_content__wrap-img {
+		width: auto;
+		padding-top: 50px;
+		display: flex;
+		align-items: center;
+	}
+}

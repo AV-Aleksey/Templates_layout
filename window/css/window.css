@@ -1,0 +1,13 @@
+.form_content__img {
+    cursor: pointer;
+}
+#form_img-size {
+    width: 400px;
+    height: 400px;
+    transition: 1s all;
+}
+
+#form_content {
+    width: 600px;
+    height: 600px;
+}

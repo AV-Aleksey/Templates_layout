@@ -1,0 +1,34 @@
+/* стили блока аккордеон */
+footer {
+	background: rgb(43, 42, 42)
+}
+.social-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.social__link {
+	cursor: pointer;
+	display: block;
+	width: 58px;
+	margin: 30px 0px;
+}
+.social__link img {
+	width: 100%;
+}
+.footer__border {
+	max-width: 400px;
+	background: #ffffff;
+	height: 1px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.footer__text p {
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 12px;
+	font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>111</title>
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/arcticmodal/arctic-css.css">
+  <link rel="stylesheet" href="css/window.css">
+</head>
+<body>
+<div>
+	<ul class="wrapper d-flex justify-content-between">
+        <li class="wrapper__card find-block">
+            <div class="card__logo_wrapper">
+                <h2 class="card__logo">Заголовок</h2>
+            </div>
+            <img class="find-block__img" src="img/5.png" alt="#">
+            <div class="content_show">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="push__wrap">
+                <button class="offer__btn 1" data-img="img/5.png">Позвонить!</button>
+            </div>
+        </li>
+        <li class="wrapper__card find-block">
+            <div class="card__logo_wrapper">
+                <h2 class="card__logo">Заголовок 2</h2>
+            </div>
+            <img class="find-block__img" src="img/6.png" alt="#">
+            <div class="push__wrap">
+                <button class="offer__btn 2" data-img="img/6.png">Позвонить!</button>
+            </div>
+            <div class="content_show">
+            	<ul>
+            		<li>111</li>
+            		<li>222</li>
+            		<li>333</li>
+            		<li>444</li>
+            		<li>555</li>
+            	</ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <div style="display: none;">
+        <div class="box-modal" id="form_content">
+            <div class="box-modal_close arcticmodal-close">закрыть</div>
+            <div class="form_content__wrap-img">
+                <img src="#" alt="#" class="form_content__img">
+            </div>
+            <div class="form_content__wrap-text">
+                <div class="form_content__wrap-p"></div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="form_img-size">
+            <div class="box-modal_close arcticmodal-close">закрыть</div>
+            <div class="form_img-size__wrap">
+                <img class="form_img-size__img" src="#" alt="#">
+            </div>
+        </div>
+    </div>
+ 
+
+<script src = "js/window.js"></script>
+</body>
+</html>

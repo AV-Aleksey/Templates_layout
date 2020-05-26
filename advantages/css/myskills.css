@@ -1,0 +1,91 @@
+/* стили блока аккордеон */
+.title-section {
+	text-align: center;
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+}
+.section-title__wrap {
+	max-width: 550px;
+	text-align: center;
+	margin: 0 auto;
+}
+.myskills__item {
+	display: flex;
+	width: 500px;
+	margin-right: 20px;
+	margin-bottom: 45px;
+	margin-top: 20px;
+}
+.myskills__item:nth-child(even) {
+	margin-right: 0px;
+} 
+.myskills__wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 40px 0px;
+}
+.myskills__graphic {
+	height: auto;
+	margin-right: 20px;
+}
+.myskills__graphic img {
+	width: 45px;
+}
+
+.myskills__title {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.myskills__p {
+	font-size: 16px;
+	font-weight: 300;
+}
+img {
+	display: inline-block;
+}
+.section-title__p {
+	font-size: 24px;
+	font-weight: 300;
+}
+.section-title {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+	.section-title__p {
+		font-size: 22px;
+	}
+	.section-title {
+		font-size: 38px;
+	}
+	.myskills__title {
+		font-size: 20px;
+	}
+	.myskills__p {
+		font-size: 14px;
+	}
+	.myskills__item {
+		width: 450px;
+	}
+	.myskills__graphic img {
+		width: 40px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.myskills__item {
+		width: 100%;	
+
+	}
+	.myskills__item {
+		margin-bottom: 30px;
+		margin-top: 0px;
+	}
+}

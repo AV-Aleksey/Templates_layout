@@ -1,0 +1,49 @@
+.skills {
+	padding: 40px 0px;
+	background: #e4e4e4;
+}
+
+.title-section, .skills-text {
+	text-align: center;
+}
+
+.wrap-progresses {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.skill-bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px 0;
+}
+
+.circle {
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.circle strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.circle strong i {
+  font-size: 24px;
+}
+
+.skill-bar span {
+	text-align: center
+}

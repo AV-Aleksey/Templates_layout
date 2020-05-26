@@ -1,0 +1,1 @@
+$(".wrap-img").twentytwenty();

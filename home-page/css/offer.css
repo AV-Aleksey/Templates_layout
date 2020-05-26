@@ -1,0 +1,108 @@
+/* стили блока аккордеон */
+.title-section {
+	text-align: center;
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+}
+.offer {
+	background: url(../img/back-header.jpg) center center /cover;
+	height: 100vh;
+	background-attachment: fixed;
+	position: relative;
+}
+.filter-color {
+	background: rgba(0, 0, 0, 0.603);
+	height: 100vh;
+}
+.offer__text {
+	color: #fff;
+	max-width: 750px;
+	padding: 30px 0px;
+}
+.offer__title {
+	font-size: 52px;
+	font-weight: 700;
+}
+.offer__p {
+	font-size: 22px;
+	color: #666;
+	font-weight: 300;
+	margin: 20px 0px;
+}
+.offer__wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	z-index: 1;
+}
+.offer__link, .offer__link:hover {
+	display: inline-block;
+	background: rgb(206, 36, 36);
+	color: #000;
+	font-size: 16px;
+	padding: 20px 60px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.offer__link:last-child {
+	background: rgb(184, 184, 184);
+}
+.offer__arrow {
+	position: absolute;
+	bottom: 5%;
+	left: calc(50% - 50px/2);
+	text-align: center;
+	z-index: 0;
+	animation: t-arrow-bottom 1.3s infinite ease;
+}
+@keyframes t-arrow-bottom {
+	0% {
+		margin-bottom: 0px;
+	}
+	50% {
+		margin-bottom: 10px;
+	}
+	100% {
+		margin-bottom: 0px;
+	}
+}
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.0);
+	transform: scale(1.03);
+  }
+
+  @media screen and (max-width: 767px) {
+	.offer__title {
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.offer__p {
+		font-size: 18px;
+		color: #666;
+		font-weight: 300;
+		margin: 20px 0px;
+	} 
+	.offer__link, .offer__link:hover {
+		padding: 15px 20px;
+	}
+	.offer__link:last-child {
+		margin-right: 0px;
+	}
+  }

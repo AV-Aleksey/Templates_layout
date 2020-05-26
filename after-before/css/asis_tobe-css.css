@@ -1,0 +1,24 @@
+.asIs-toBe {
+	padding: 40px 0px;
+	background: #e4e4e4;
+}
+
+.title-section, .title-text {
+	text-align: center;
+}
+.section-text {
+  text-align: center;
+}
+
+.twenty {
+  margin: 40px auto;
+  width: 800px;
+}
+
+.wrap-progresses {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+

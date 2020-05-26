@@ -1,0 +1,68 @@
+/* стили блока аккордеон */
+.faq {
+	background: #eeeeee;
+	padding: 40px 0px;
+}
+.title-section {
+	text-align: center;
+}
+
+.wrap-gallery {
+	display: flex;
+	justify-content: center;
+}
+
+.container-card {
+	position: relative;
+	margin: 5px;
+}
+
+.image {
+	display: block;
+	max-width: 360px;
+	height: auto;
+	cursor: pointer;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.60);
+	overflow: hidden;
+	max-width: 360px;
+	height: 0;
+	transition: .5s ease;
+	cursor: pointer;
+}
+
+
+.container-card:hover .overlay {
+	height: 100%;
+}
+
+.overlay__wrap {
+	color: white;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	top: 60%;
+	left: 50%;
+	width: 300px;
+}
+.overlay__wrap * {
+	margin: 15px 0px;
+}
+.text {
+	font-size: 24px;
+	font-weight: normal;
+}
+.pre-text {
+	font-size: 12px;
+	font-weight: 300;
+}
+.post-text {
+	font-size: 20px;
+	font-weight: 300;
+}
